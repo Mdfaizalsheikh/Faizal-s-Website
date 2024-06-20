@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Support Our satellite Development</h1>
+        <p>Your support helps us create better satellite. Make a donation to download our latest game!</p>
+        
+        <form id="donation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" name="amount" required>
+            
+            <button type="submit">Donate</button>
+        </form>
+        
+        <div id="thank-you" style="display:none;">
+            <h2>Thank You for Your Donation!</h2>
+            <p>Click the button below to download the game.</p>
+            <a href="game.zip" download="game.zip" class="download-button">Download Game</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
